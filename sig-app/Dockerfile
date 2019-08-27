@@ -15,9 +15,10 @@ RUN npm i
 
 
 FROM ngbuilder2 as ngbuilder3
-COPY .. /src/
+COPY . /src/
 WORKDIR /src/
 RUN ng build
+
 
 # Server
 FROM nginx:alpine as ngserver
