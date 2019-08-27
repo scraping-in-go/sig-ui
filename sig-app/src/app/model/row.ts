@@ -1,9 +1,9 @@
 export class Row {
-  private id: string;
-  private jobID: string;
-  private kind: string;
-  private createdBy: string;
-  private value: string;
+  public id: string;
+  public jobID: string;
+  public kind: string;
+  public createdBy: string;
+  public value: string;
 
   constructor(id, jobID, kind, createdBy, value) {
     this.id = id;

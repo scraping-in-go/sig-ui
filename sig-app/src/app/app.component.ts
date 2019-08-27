@@ -11,6 +11,7 @@ import {Row} from './model/row';
 export class AppComponent {
 
   public list: Row[] = [];
+  public view: string;
 
   title = 'sig-app';
 
@@ -23,7 +24,11 @@ export class AppComponent {
   }
 
   public btnOEM(): void {
-    console.log('oh hai')
+    console.log('oh hai');
+  }
+
+  public btnChangeView(s: string): void {
+    this.view = s;
   }
 
 }
