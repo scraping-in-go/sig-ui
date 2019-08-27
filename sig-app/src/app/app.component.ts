@@ -22,4 +22,8 @@ export class AppComponent {
     }
   }
 
+  public btnOEM(): void {
+    console.log('oh hai')
+  }
+
 }
